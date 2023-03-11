@@ -101,3 +101,57 @@ body {
     transition: .5s;
 }
 
+@media (min-width: 1920px) {
+    .blocks:hover .title {
+        background-image: url(./img/left-icon.svg);
+        color: var(--text-primary-color);
+        transition: .5s;
+    }
+
+    .blocks:hover .block:hover .title {
+        background-image: url(./img/bottom-icon.svg);
+        transition: .5s;
+    }
+
+    .blocks:hover .radio:checked~.title {
+        background-image: url(./img/bottom-icon.svg);
+    }
+
+    .blocks:hover, .block:hover {
+        cursor: pointer;
+    }
+
+    .block:hover>.block-body {
+        height: min(36vw, max(36vw, 100%));
+        opacity: 1;
+        transition: all .5s ease-in;
+    }
+}
+
+@media (min-width: 820px) and (max-width: 1919px) {
+    .description {
+        font-size: 1.5rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 819px) {
+    .description {
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .main-title {
+        font-size: 1.5rem;
+    }
+}
