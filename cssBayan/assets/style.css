@@ -85,3 +85,19 @@ body {
 .image:hover {
     border: solid var(--text-primary-color);
 }
+
+.radio {
+    display: none;
+}
+
+.radio:checked~.block-body {
+    opacity: 1;
+    height: min(36vw, max(36vw, 100%));
+    transition: all 1.2s ease-in;
+}
+
+.radio:checked+.title {
+    color: var(--text-primary-color);
+    transition: .5s;
+}
+
