@@ -68,3 +68,20 @@ body {
     overflow: hidden;
     opacity: 0;
 }
+
+.description {
+    padding: 1rem;
+    font-size: 2rem;
+    color: var(--text-secondary-color);
+}
+
+.image {
+    padding: 1.5rem;
+    max-width: 100%;
+    text-align: center;
+    height: auto;
+}
+
+.image:hover {
+    border: solid var(--text-primary-color);
+}
